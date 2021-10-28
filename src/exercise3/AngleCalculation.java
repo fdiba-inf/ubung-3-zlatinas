@@ -12,10 +12,10 @@ public class AngleCalculation {
        double grad;
        do {
          if (ch == 'r') {
-           radiant = (x * 3.14) / 180;
+           radiant = x /(Math.PI*180);
            System.out.println("Angle: " + radiant + ch);
          } else {
-           grad = (x * 180) / 3.14;
+           grad = (x * Math.PI) / 180;
            System.out.println("Angle: " + grad + ch);
          }
          ch = input.next().charAt(0);
